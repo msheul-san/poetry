@@ -1,0 +1,19 @@
+DirectoryIndex index.php
+AddDefaultCharset utf-8
+
+RewriteEngine on
+
+RewriteBase /
+
+RewriteRule ^login/$ login.php [L]
+RewriteRule ^logout/$ login.php?logout [L]
+
+RewriteRule ^admin/$ admin.php [L]
+RewriteRule ^admin/adding/$ admin.php?adding=1 [L]
+RewriteRule ^admin/edit/([0-9]+)/$ admin.php?edit=1&id=$1 [L]
+
+RewriteRule ^random/$ random.php [L]
+
+RewriteRule ^allpoems/$ allpoems.php [L]
+RewriteRule ^allpoems/showall/$ allpoems.php?showall [L]
+RewriteRule ^allpoems/poem/([0-9]+)/$ allpoems.php?poem_id=$1 [L]

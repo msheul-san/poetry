@@ -1,0 +1,252 @@
+/* 
+    Document   : main
+    Created on : Feb 6, 2013, 11:05:36 PM
+    Author     : msheul
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+@font-face {
+		font-family: Rex; /* Имя шрифта */
+		src: url('../fonts/RexLight.otf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+		font-family: Casper; /* Имя шрифта */
+		src: url('../fonts/Casper.ttf'); /* Путь к файлу со шрифтом */
+}
+
+body {
+	font-family:Casper;
+	font-size:16px;
+}
+
+a:link, a:visited, a:active, a:hover  {
+	text-decoration: none;
+	color: black;
+} 
+
+a.poem_href:link, 
+a.poem_href:visited, 
+a.poem_href:active, 
+a.poem_href:hover
+{
+	color: cornflowerblue;
+}
+
+#goTop {
+	-webkit-transition:All 0.5s ease;
+	-moz-transition:All 0.5s ease;
+	-o-transition:All 0.5s ease;
+	-moz-opacity: 0.50;
+	opacity: 0.50;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	position:fixed;
+	top: 207px;
+	left:70%;
+	color:#898A8B;
+}
+
+#backToList {
+	position:fixed;
+	left:70%;
+	top:117px;
+}
+
+#goTop:hover {
+	color:#575757;
+}
+
+.container {
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.main_left {
+	width: 260px;
+	height: 1px;
+	float: left;
+}
+
+.main {
+	width: 740px;
+	height: 1px;
+	float: left;
+	
+}
+
+h1 {
+	font-family: Rex;
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+div.input {
+	margin-bottom: 5px;
+}
+
+div.input .label {
+	width:100px;
+	margin-top: 12px; 
+	font-family: Rex;
+	float:left;
+}
+
+div.input .elem {
+	display: inline-block;
+}
+
+.login {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -123px;
+	margin-left: -124px;
+	text-align: center;
+}
+
+.login .button {
+	position: relative;
+	margin: 0 auto;
+}
+
+.admin_panel {
+	position: fixed;
+	text-align: center;
+}
+
+.admin_panel .button, .admin_panel .button_unactive {
+	position: relative;
+	margin: 0 auto;
+}
+
+input.inputtext, textarea {
+	text-align: center;
+	color: #404040;
+	width: 200px;
+	height: 30px;
+	border:1px solid #909090;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+}
+
+input.inputtext:focus, textarea:focus {
+	outline: 0;
+	border-color: rgba(82, 168, 236, 0.8);
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);
+	-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+.iserror, .iserror:focus {
+	outline: 0;
+	border-color: rgba(255, 0, 0, 0.8);
+	-webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(255, 0, 0, 0.8);
+	-moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(255, 0, 0, 0.8);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1),0 0 8px rgba(255, 0, 0, 0.8);
+}
+
+form.add_poem input.inputtext {
+	padding: 2px;
+	text-align:left; 
+	width:650px;
+}
+
+form.add_poem textarea {
+	margin-top: 5px;
+	padding: 5px;
+	text-align: left;
+	width: 650px;
+	height: 500px;
+}
+
+.button {
+	position: relative;
+	width: 200px;
+	height: 70px;
+	line-height: 80px;
+	background-color: yellow;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-user-select: -moz-none;
+	-o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.button_unactive {
+	position: relative;
+	width: 200px;
+	height: 70px;
+	line-height: 80px;
+	background-color: aquamarine;
+	text-align: center;
+	vertical-align: middle;
+	cursor: cell;
+	-moz-user-select: -moz-none;
+	-o-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.buttontext {
+	font-family: Rex;
+	font-size: 20px;
+}
+
+.main h1 {
+	margin-bottom: 50px;
+}
+
+.poem {
+	padding-bottom: 20px;
+}
+
+.poem .title {
+	margin-bottom: -20px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.poem .text {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.poem_list {
+	display: inline-block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.allpoems {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.allpoems .poem .title {
+	margin-bottom: -20px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.allpoems .poem .text {
+	display: block;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.delete {
+	color: red; 
+	float: left; 
+	font-weight: bold; 
+	cursor: pointer;
+}
